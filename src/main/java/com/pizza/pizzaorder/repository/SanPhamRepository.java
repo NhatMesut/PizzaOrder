@@ -1,6 +1,6 @@
-package com.pizza.api.repository;
+package com.pizza.pizzaorder.repository;
 
-import com.pizza.api.entity.SanPham;
+import com.pizza.pizzaorder.entity.SanPham;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;

@@ -1,4 +1,4 @@
-package com.pizza.api.entity;
+package com.pizza.pizzaorder.entity;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.ColumnDefault;
@@ -9,9 +9,9 @@ import java.util.UUID;
 @Entity
 public class SanPham {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID_SanPham", nullable = false)
-    private UUID id;
+    private Integer id;
 
     @Nationalized
     @Column(name = "Ten", nullable = false)
@@ -34,11 +34,11 @@ public class SanPham {
     @Column(name = "TrangThai", nullable = false)
     private Integer trangThai;
 
-    public UUID getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(UUID id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
